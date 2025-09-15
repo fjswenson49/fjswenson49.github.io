@@ -1,0 +1,61 @@
+/* Shared stylesheet for MBS Sensors site */
+:root { --brand:#003366; --accent:#0066cc; --accent-hover:#004999; --highlight:#ffcc00; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: var(--brand);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.active {
+  text-decoration: underline;
+  color: var(--highlight);
+}
+main, section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h1, h2 {
+  color: var(--brand);
+}
+footer {
+  background: var(--brand);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.button:hover, .button:focus {
+  background: var(--accent-hover);
+}
+/* Small-screen tweaks */
+@media (max-width: 560px) {
+  header { padding: 16px; }
+  nav a { display: inline-block; margin: 6px; }
+  main, section { padding: 24px 16px; }
+}
